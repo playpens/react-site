@@ -30,7 +30,7 @@ function People(props) {
   useEffect(() => {
     console.log('PERSON ADDED');
     if (people.length >= 1) { document.title = `Welcome, ${name}!`; }
-  }, [people]);
+  }, [people, name]);
 
   // This runs only once on the initial rendering
   // (this could be a good use case for doing a GET from an API to pre-load a page of data)
